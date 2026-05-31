@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keydown Event Listener</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Gilroy";
+            box-sizing: border-box;
+        }
+
+        html , body {
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            background-color: rgb(191, 115, 115);
+        }
+
+        div {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h1{
+            color: rgb(36, 35, 33);
+            font-size: 90px;
+        }
+
+        .input {
+            width: 50%;
+            height: 50%;
+        }
+        input {
+            display: none;
+        }
+
+        .btn {
+            width: 200px;
+            height: 10px;
+            padding: 20px 20px;
+            background-color: orange;
+            border-radius: 10px;
+            align-self: center;
+            justify-self: center;
+        }
+
+        .btn:hover {
+            background-color: rgb(238, 158, 10);
+        }
+    </style>
+</head>
+<body>
+    <!-- <div>
+        <h1>Enter Anything </h1>
+    </div> -->
+
+    <div class="input">
+        <input type="file">
+    </div>
+    <div class="btn">
+        Upload file
+    </div>
+    <script src="keydown.js"></script>
+</body>
+</html>
