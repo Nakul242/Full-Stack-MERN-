@@ -20,7 +20,14 @@ let btn = document.querySelector(".btn");
 let inp = document.querySelector("input");
 
 btn.addEventListener("click" , function(details) {
-    console.log(inp.click());
-    console.log(details);
-    console.dir(inp.value);
+    inp.click();
+});
+
+inp.addEventListener("change", function(details) {
+    let val = details.srcElement.files[0];
+
+    if (val) {
+        btn.textContent = val.name;
+    }
+    // console.log(details.srcElement.files[0].name);
 })

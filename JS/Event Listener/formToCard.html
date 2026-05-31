@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form to Card</title>
+    <style>
+        .main {
+            margin: 40px;
+            padding: 30px;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid red;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            gap: 100px;
+        }
+
+        .card {
+            margin: 40px;
+            padding: 20px;
+            height: 30%;
+            width: 30%;
+            border: 2px solid rgb(55, 53, 53);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <form>
+            <input type="text" placeholder="name">
+            <input type="text" placeholder="age">
+            <input type="email" placeholder="email">
+            <input type="text" placeholder="pic">
+            <input type="submit" placeholder="">
+        </form>
+
+        <div class="card">
+
+        </div>
+    </div>
+    <script src="formToCard.js"></script>
+</body>
+</html>
