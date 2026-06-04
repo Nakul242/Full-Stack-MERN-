@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Capturing</title>
+    <style>
+        /* Boilerplate */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: monospace;
+            color: white;
+        }
+
+        body, html {
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            background-color: #1e1e1e;
+        }
+
+        button {
+            background-color: cornflowerblue;
+        }
+
+        .box1, .box2, .box3 {
+            padding: 30px;
+            width: 60%;
+            height: 50%;
+        }
+        .box1 {
+            background-color: chartreuse;
+        }
+
+        .box2 {
+            background-color: coral;
+        }
+
+        .box3 {
+            background-color: bisque;
+        }
+
+        input {
+            padding: 10px;
+            margin: 30px 30px;
+            background-color: antiquewhite;
+            color: black;
+        }
+
+        h3 {
+            padding: 20px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Task 1 : see capturing phase by making nested div and how its work when we activate it using true -->
+    <!-- <div class="box1">
+        <div class="box2">
+            <div class="box3">
+                <button type="button">click</button>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Task 2 : Live Character count , when value increases from 20 char shows in neg and red color otherwise in white -->
+    <h3> Character left : <span> 20 </span></h3>
+    <input type="text" placeholder="write here">
+    <script src="capturing.js"></script>
+</body>
+</html>
